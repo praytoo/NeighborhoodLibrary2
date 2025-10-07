@@ -69,6 +69,7 @@ public class Library {
         String name = scanner.nextLine();
         Book checkedOutBook = books[booknr - 1];
         checkedOutBook.setCheckedOut(true);
+        checkedOutBook.setCheckedOutTo(name);
     }
     public void checkedOutBooks(){
 
